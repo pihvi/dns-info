@@ -1,0 +1,11 @@
+{
+  "name": "dns-info",
+  "description": "Fetch DNS info.",
+  "keywords": ["dns", "promise"],
+  "version": "0.0.1",
+  "main": "./dns-info.js",
+  "license": "Public domain",
+  "dependencies": {
+    "native-dns": "0.6.1"
+  }
+}
