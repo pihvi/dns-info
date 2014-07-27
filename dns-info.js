@@ -22,10 +22,16 @@ module.exports = function(domain) {
       }).send()
     })
   })
-  return Promise.all(allTypes).filter(function(res) {
-    return res.answer.length > 0
-  }).map(function(res) {
-    var questionType = dns.consts.QTYPE_TO_NAME[res.question[0].type]
-    return {type: questionType, data: res.answer}
-  })
+  return Promise.reduce(allTypes, function(result, response) {
+    if (response.answer.length) {
+      var ANY = 255
+      if (response.question[0].type != ANY) {
+        var questionType = dns.consts.QTYPE_TO_NAME[response.question[0].type]
+        result.byTypes.push({type: questionType, data: response.answer})
+      } else {
+        result.byAny = response.answer
+      }
+    }
+    return result
+  }, {byTypes: [], byAny: undefined})
 }

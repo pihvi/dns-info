@@ -1,9 +1,7 @@
 var dnsInfo = require('./dns-info')
 
-dnsInfo('valio.fi').then(function(info) {
-  info.forEach(function(type) {
-    console.log(type)
-  })
+dnsInfo('reaktor.fi').then(function(info) {
+  console.log(info)
 }).catch(function(e) {
   console.error(e)
 })
