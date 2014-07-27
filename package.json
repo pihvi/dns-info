@@ -8,6 +8,7 @@
   "version": "0.0.1",
   "main": "./dns-info.js",
   "license": "Public domain",
+  "repository": "https://github.com/pihvi/dns-info",
   "dependencies": {
     "bluebird": "2.2.2",
     "native-dns": "0.6.1"
