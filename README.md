@@ -3,6 +3,22 @@ Fetch DNS info.
 ```javascript
 dnsInfo('reaktor.fi').then(function(info) {
   console.log(info)
+})
+```
+
+or
+
+```javascript
+dnsInfo({
+  domain: 'reaktor.fi',
+  server: {
+    address: '8.8.8.8',
+    port: 53,
+    type: 'udp'
+  },
+  timeout: 2000
+}).then(function(info) {
+  console.log(info)
 }).catch(function(e) {
   console.error(e)
 })

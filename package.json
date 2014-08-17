@@ -5,7 +5,7 @@
     "dns",
     "promise"
   ],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "./dns-info.js",
   "license": "Public domain",
   "repository": "https://github.com/pihvi/dns-info",
