@@ -74,3 +74,6 @@ should print something like
        ttl: 572,
        address: '176.58.116.179' } ] }
 ```
+
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/pihvi/dns-info.svg)](https://greenkeeper.io/)
