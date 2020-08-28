@@ -10,7 +10,7 @@
   "license": "Public domain",
   "repository": "https://github.com/pihvi/dns-info",
   "dependencies": {
-    "lodash": "2.4.1",
+    "lodash": "4.17.17",
     "bluebird": "2.2.2",
     "native-dns": "0.6.1"
   }
